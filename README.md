@@ -1,2 +1,2 @@
 # MVMT
-A simple movement script for Geometry Dash. Made with SPWN.
+A simple movement script for Geometry Dash. Written with SPWN.
