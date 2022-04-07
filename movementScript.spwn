@@ -1,0 +1,30 @@
+extract import gamescene
+
+player = 2g
+pointer = 3g
+center = 4g
+direction = counter(0)
+
+on(button_a(), !{
+    direction += 1
+    pointer.rotate(center, 90)
+    pointer.move_to(player)
+    if direction == 4 {
+    direction = 0
+    }
+})
+
+on(button_b(), !{
+    if direction == 0 {
+        player.move(0, 10, 0)
+    }
+    if direction == 1 {
+        player.move(10, 0, 0)
+    }
+    if direction == 2 {
+        player.move(0, -10, 0)
+    }
+    if direction == 3 {
+        player.move(-10, 0, 0)
+    }
+})
